@@ -1,13 +1,13 @@
 
-# 🏋️‍♂️ Proof of Workout (Web3 DApp)
+# Proof of Workout (Web3 DApp)
 
 A decentralized application (DApp) deployed on the **Ethereum Sepolia testnet** that motivates users to achieve their fitness goals through financial stakes. Users lock their ETH into a smart contract, submit proof of their workout, and earn their deposit back plus a bonus upon approval by independent arbiters.
 
-## 🌐 Smart Contract
+## Smart Contract
 The contract is successfully deployed on the **Sepolia Testnet**:
 **Contract Address:** [`0xC9be207a11E3B15695802c93F641b8c68FB8eae5`](https://sepolia.etherscan.io/address/0xC9be207a11E3B15695802c93F641b8c68FB8eae5)
 
-## 🚀 Tech Stack
+## Tech Stack
 
 * **Smart Contracts:** Solidity 0.8.20
 * **Development Environment:** Hardhat (Toolbox v2)
@@ -16,7 +16,7 @@ The contract is successfully deployed on the **Sepolia Testnet**:
 * **Blockchain Infrastructure:** Alchemy RPC, Ethereum Sepolia Testnet
 * **Testing:** Mocha & Chai (35/35 tests passing with 100% coverage)
 
-## 🏗️ DApp Architecture & Flow
+## DApp Architecture & Flow
 
 1. **Stake (Create Challenge):** A user connects their MetaMask wallet, sets a fitness goal (e.g., "Run 5km daily"), sets a deadline (1-90 days), and locks a deposit in ETH into the smart contract.
 2. **Submit Proof:** Once the workout is complete, the user submits a proof URL (e.g., a Strava activity link or photo evidence) to the blockchain.
@@ -32,7 +32,7 @@ The contract is successfully deployed on the **Sepolia Testnet**:
 * **Network Validation:** Frontend automatically checks if the user's wallet is connected to the Sepolia network.
 * **Interactive UI:** Toast notification system for pending, successful, and rejected transactions.
 
-## 💻 Local Development Setup
+## Local Development Setup
 
 ### Prerequisites
 * [Node.js](https://nodejs.org/)
@@ -79,7 +79,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 
 *Save the deployed contract address output in the terminal.*
 
-## 🖥️ Frontend Setup
+## Frontend Setup
 
 1. Open `frontend/constants.js`.
 2. Update the `CONTRACT_ADDRESS` variable with your newly deployed address.
