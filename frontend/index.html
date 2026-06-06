@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proof of Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Proof of Workout</h1>
+        <button id="connectBtn" class="btn-small">Connect Wallet</button>
+    </header>
+
+    <div class="card">
+        <h2>Створити челендж</h2>
+        <input type="text" id="goalInput" placeholder="Ціль (напр., Пробігти 5км щодня)">
+        <input type="number" id="daysInput" placeholder="Тривалість (днів, 1-90)" min="1" max="90">
+        <input type="number" id="depositInput" placeholder="Депозит (ETH)" step="0.001" min="0.001">
+        <button id="createBtn">Зробити ставку на себе</button>
+    </div>
+
+    <div class="card arbiter-panel" id="arbiterPanel">
+        <h2>⚖️ Панель Арбітра</h2>
+        <p class="text-muted">Ви авторизовані як суддя. Введіть ID челенджу для перевірки.</p>
+        <input type="number" id="arbiterIdInput" placeholder="ID челенджу">
+        <div class="button-group">
+            <button class="btn-success" id="approveBtn">Approve (Доказ дійсний)</button>
+            <button class="btn-error" id="rejectBtn">Reject (Фейк)</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Мої челенджі</h2>
+        <div id="challengesList">
+            <p class="text-muted">Підключіть гаманець, щоб побачити свої челенджі.</p>
+        </div>
+    </div>
+</div>
+
+<div id="toast-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>
+
+<script src="constants.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

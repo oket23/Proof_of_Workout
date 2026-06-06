@@ -1,0 +1,88 @@
+# =========================
+# Залежності (Node.js / npm)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# =========================
+# Секрети та ключі (НАЙВАЖЛИВІШЕ)
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# =========================
+# Hardhat / Web3 (Згенеровані файли)
+# =========================
+# Кеш та скомпільовані контракти
+artifacts/
+cache/
+
+# Згенеровані типи
+typechain/
+typechain-types/
+
+# Тестування (coverage)
+coverage/
+coverage.json
+
+# Hardhat Ignition (деплої на локальну мережу)
+ignition/deployments/chain-31337/
+
+# Звіти про газ (якщо будеш використовувати eth-gas-reporter)
+gasReporterOutput.json
+
+# =========================
+# Файли Операційних Систем
+# =========================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+
+# =========================
+# Редактори коду (IDE)
+# =========================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# WebStorm / IntelliJ (JetBrains)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Інші редактори
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# Логи
+# =========================
+logs
+*.log
