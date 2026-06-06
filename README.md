@@ -25,7 +25,7 @@ The contract is successfully deployed on the **Sepolia Testnet**:
    * **Success:** If approved, the user receives their original deposit + a **5% bonus**.
    * **Failure:** If rejected or if the deadline expires, the user's deposit is irrevocably transferred to a designated **Charity address**.
 
-## ⚙️ Key Features
+## Key Features
 * **Smart Contract Security:** Implementation of the "Checks-Effects-Interactions" pattern to prevent Reentrancy attacks (deposits are zeroed out before `.transfer()`).
 * **Role-Based Access Control:** Custom modifiers (`onlyArbiter`, `onlyOwner`) ensuring strict permission management.
 * **Modern Web3 Frontend:** Fully functional UI built without heavy frameworks. Uses `ethers.js v6` for direct blockchain communication.
